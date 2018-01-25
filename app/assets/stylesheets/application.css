@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    background-image: url(/assets/portfolio_image.jpg);
+    background-repeat: no-repeat;
+    /* make backtround fit window size */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+ 
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar{
+    /* want navbar to move with screen and lay above all elements */
+    position: relative;
+    /* make element overlay all other elements */
+    z-index: 1;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+#nav-item-last{
+    margin-right: 15px;
+}
+
+
+#content {
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+    display: inline-block;
+    margin-left: 180px;
+}
+
+.images {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+/* annimations */
+
+
+
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#dropdown-area .dropdown-items {
+    position: relative;
+    display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-items {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
